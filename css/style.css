@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  background: #ba94cd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  font-size: 16px;
+}
+html, .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.cell {
+  border: 0.25em solid rgb(95, 95, 95);
+  height: 3em;
+  width: 3em;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: lightgrey;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+main,
+header,
+.scoring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.score-board {
+  margin: 0.3em;
+  border: .1em solid white;
+  padding: .1em;
+  font-size: 2em;
+  width: 4em;
+  font-weight: bold;
+  border-radius: .2em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background: lightgreen;
+  color: black;
+  width: 8em;
+  height: 2em;
+  border-radius: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+button:hover {
+  background: green;
+  color: white;
+}
+
+scan {
+  font-size: 1em;
+}
+
+body {
+  background: url('../img/background.jpg');
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: .8em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: .6em;
+  }
+}
